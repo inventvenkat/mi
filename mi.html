@@ -1,0 +1,76 @@
+<head>
+<title>MADEInDIA</title>
+</head>
+<body>
+	<div class="first">
+		 <input type="search" placeholder="Search">
+		<button class="button button5">Login</button>
+	</div>
+<br><br>
+	<div id='cssmenu'>
+<ul>
+      <li class='active'><a href='#'>Categories</a>
+      <ul>
+         <li><a href='#'>Places</a>
+            <ul>
+               {{#each places}}
+               {{> place}}
+		{{/each}}
+            </ul>
+         </li>
+         <li><a href='#'>Seasons</a>
+            <ul>
+		{{#each seasons}}
+               {{> season}}
+		{{/each}}
+            </ul>
+         </li>
+	<li><a href='#'>Brands</a>
+            <ul>
+		{{#each brands}}
+               {{> brand}}
+		{{/each}}
+            </ul>
+         </li>
+	   <li><a href='#'>Accessories</a>
+            <ul>
+		{{#each items}}
+               {{> item}}
+		{{/each}}
+            </ul>
+         </li>
+
+      </ul>
+   </li>
+   </ul>
+<div class="trheader">Top Rated</div>
+<div class="top_rated">
+</div>
+<div class="bgheader">Big Deals</div>
+<div class="big_deals">
+</div>
+<div class="csheader">Top Customers</div>
+<div class="customers">
+</div>
+</div>
+</body>
+
+
+<template name="place">
+	<li>
+		<a href='#'>{{city}}</a>
+	</li>	
+</template>
+<template name="season">
+	<li>
+		<a href='#'>{{climate}}</a>
+	</li>	
+</template><template name="item">
+	<li>
+		<a href='#'>{{accessories}}</a>
+	</li>	
+</template><template name="brand">
+	<li>
+		<a href='#'>{{brand_name}}</a>
+	</li>	
+</template>
